@@ -4,7 +4,7 @@ dependencies:
 
 ldppackages:
   - djangoldp_account
-  - mud_django
+  - djangoldp_mud
 
 server:
   # DjangoLDP required settings
