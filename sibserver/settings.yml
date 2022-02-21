@@ -1,0 +1,24 @@
+
+dependencies:
+  - djangoldp-account
+
+ldppackages:
+  - djangoldp_account
+  - mud_django
+
+server:
+  # DjangoLDP required settings
+  DEBUG: true
+  ALLOWED_HOSTS:
+    - '*'
+  SECRET_KEY: 'zm7g^d=)x7wexw=z%^gg#e6oqwor@5%6tn0-x+*&#f@i+_ur+t'
+  DATABASES:
+    default:
+      ENGINE: djongo
+      NAME: simpolis-demo
+      ENFORCE_SCHEMA: False
+  LDP_RDF_CONTEXT: https://cdn.happy-dev.fr/owl/hdcontext.jsonld
+  ROOT_URLCONF: server.urls
+  STATIC_ROOT: static
+  MEDIA_ROOT: media
+  SEND_BACKLINKS: False
